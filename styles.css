@@ -1,0 +1,110 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #451952;
+}
+
+.titulo {
+    color: white;
+}
+#question-container {
+    background: #d4cfff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+/* Lista de alternativas */
+.question ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.question ul li {
+    /* background-color: #ff00f2; */
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.question ul li:hover {
+    background-color: #ae445a;
+}
+
+/* Adicionando as cores de feedback para as respostas */
+.correct {
+    background-color: green; /* Verde claro */
+    color: #000000; /* Texto verde escuro */
+}
+
+.wrong {
+    background-color: red; /* Vermelho claro */
+    color: #000000; /* Texto vermelho escuro */
+}
+
+/* Área de feedback com rolagem */
+.feedback {
+    max-height: 200px; /* Limite de altura para a área de explicações */
+    overflow-y: auto;   /* Permite rolagem vertical se o conteúdo exceder o limite */
+    /* background-color: #e8bcb9; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Botão "Próxima Pergunta" */
+#next-question {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none; /* Oculto até que uma resposta seja selecionada */
+}
+
+#next-question:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para a página de resultados */
+.result {
+    text-align: center;
+}
+
+.result h2 {
+    margin-top: 0;
+}
+
+.result button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.result button:hover {
+    background-color: #45a049;
+}
